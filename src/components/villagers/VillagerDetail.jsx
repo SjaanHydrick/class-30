@@ -12,6 +12,7 @@ const VillagerDetail = () => {
     setVillager(villager);
   }, []);
 
+
   return (
     <>
       {chosenVillager ?

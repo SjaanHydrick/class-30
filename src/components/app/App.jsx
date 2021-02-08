@@ -8,7 +8,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={AllVillagers} />
-        <Route path="/:villager" component={VillagerDetail} />
+        <Route path="/:id" component={VillagerDetail} />
       </Switch>
     </Router>
   );

@@ -6,7 +6,7 @@ import Villager from './Villager';
 const VillagerList = ({ villagers }) => {
   const villagerElements = villagers.map(villager => (
     <div key={villager.id}>
-      <Link to={`/${villager.id}`}>
+      <Link to={`/${villager._id}`}>
         <Villager {...villager} />
       </Link>
     </div>
@@ -21,8 +21,8 @@ const VillagerList = ({ villagers }) => {
 
 VillagerList.propTypes = {
   villagers: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    id: PropTypes.string,
+    name: PropTypes.string,
     image: PropTypes.string
   })).isRequired
 };
