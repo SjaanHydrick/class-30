@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { getVillagers } from '../components/services/villagerApi';
 import VillagerList from '../components/villagers/VillagerList';
 
-export default function AllVillagers({ page }) {
+export default function AllVillagers() {
   const [villagers, setVillagers] = useState([]);
 
   useEffect(() => {
-    getVillagers(page).then((newVillagers) => setVillagers(newVillagers));
+    getVillagers().then((newVillagers) => setVillagers(newVillagers));
   }, []);
 
   return (
