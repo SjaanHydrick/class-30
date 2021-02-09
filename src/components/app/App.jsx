@@ -6,12 +6,14 @@ import VillagerDetail from '../../components/villagers/VillagerDetail';
 
 export default function App() {
   return (
-    <Router>
+    <div>
       <Header />
-      <Switch>
-        <Route exact path="/" component={AllVillagers} />
-        <Route path="/:id" component={VillagerDetail} />
-      </Switch>
-    </Router>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={AllVillagers} />
+          <Route path="/:id" component={VillagerDetail} />
+        </Switch>
+      </Router>
+    </div>
   );
 }
