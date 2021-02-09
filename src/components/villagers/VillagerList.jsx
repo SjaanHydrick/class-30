@@ -14,7 +14,7 @@ const VillagerList = ({ villagers }) => {
   ));
 
   return (
-    <div className={styles.villagerList}>
+    <div data-testid="villagers" className={styles.villagerList}>
       {villagerElements}
     </div>
   );
@@ -25,7 +25,7 @@ VillagerList.propTypes = {
     id: PropTypes.string,
     name: PropTypes.string,
     image: PropTypes.string
-  })).isRequired
+  }))
 };
 
 export default VillagerList;
