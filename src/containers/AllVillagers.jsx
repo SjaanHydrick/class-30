@@ -10,7 +10,7 @@ export default function AllVillagers() {
   }, []);
  
   return (
-    <div>
+    <div data-testid="villagers">
       {
         villagers ?
           <div>
