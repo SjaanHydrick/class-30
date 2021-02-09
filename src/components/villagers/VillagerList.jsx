@@ -5,8 +5,8 @@ import Villager from './Villager';
 import styles from './Villager.css';
 
 const VillagerList = ({ villagers }) => {
-  const villagerElements = villagers.map(villager => (
-    <div key={villager.id}>
+  const villagerElements = villagers.map((villager, index) => (
+    <div key={index}>
       <Link to={`/${villager._id}`}>
         <Villager {...villager} />
       </Link>
@@ -22,7 +22,7 @@ const VillagerList = ({ villagers }) => {
 
 VillagerList.propTypes = {
   villagers: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string,
+    _id: PropTypes.string,
     name: PropTypes.string,
     image: PropTypes.string
   }))

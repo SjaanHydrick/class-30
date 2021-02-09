@@ -11,7 +11,7 @@ const Villager = ({ image, name }) => (
 
 Villager.propTypes = {
   image: PropTypes.string,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string
 };
 
 export default Villager;

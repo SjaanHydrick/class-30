@@ -14,3 +14,46 @@ exports[`App component renders App 1`] = `
   </h2>
 </DocumentFragment>
 `;
+
+exports[`App component renders Villager 1`] = `
+<DocumentFragment>
+  <figure>
+    <img />
+    <p
+      class="name"
+    />
+  </figure>
+</DocumentFragment>
+`;
+
+exports[`App component renders VillagerDetail 1`] = `
+<DocumentFragment>
+  <p>
+    Loading...
+  </p>
+</DocumentFragment>
+`;
+
+exports[`App component renders Villagers 1`] = `
+<DocumentFragment>
+  <div
+    class="villagerList"
+    data-testid="villagers"
+  >
+    <div>
+      <a
+        href="/undefined"
+      >
+        <figure>
+          <img
+            src=""
+          />
+          <p
+            class="name"
+          />
+        </figure>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
