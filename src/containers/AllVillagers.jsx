@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getVillagers } from '../components/services/villagerApi';
-import Header from '../components/header/Header';
+import Header from '../components/header/Header.jsx';
 import VillagerList from '../components/villagers/VillagerList';
 
 const AllVillagers = () => {
