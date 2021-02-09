@@ -1,15 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Villager.css';
 
 const Villager = ({ image, name }) => (
   <figure>
-    {
-      !image || image === undefined ?
-        <p>No Image Found</p>
-        :
-        <img src={image} />
-    }
-    <p>{name}</p>
+    <img src={image} />
+    <p className={styles.name}>{name}</p>
   </figure>
 );
 

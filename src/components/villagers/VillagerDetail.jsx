@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { getVillager } from '../services/villagerApi';
 import { Link, useParams } from 'react-router-dom';
+import styles from './Villager.css';
 
 const VillagerDetail = () => {
   const [chosenVillager, setVillager] = useState();
@@ -16,11 +17,11 @@ const VillagerDetail = () => {
   return (
     <>
       {chosenVillager ?
-        <div>
-          <Link to="/"><p>&larr; Back to Home</p></Link>
-          <img src={chosenVillager.image} />
-          <p>{chosenVillager.name}</p>
-          <p>&quot;{chosenVillager.quote}&quot;</p>
+        <div className={styles.details}>
+          <Link to="/"><p className={styles.back}>&larr; Back to Home</p></Link>
+          <p className={styles.detailsName}>{chosenVillager.name}</p>
+          <img className={styles.detailsImg} src={chosenVillager.image} />
+          <p className={styles.quote}>&quot;{chosenVillager.quote}&quot;</p>
           <p>Personality: {chosenVillager.personality}</p>
           <p>Species: {chosenVillager.species}</p>
           <p>Birthday: {chosenVillager.birthday}</p>

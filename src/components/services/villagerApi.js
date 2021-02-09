@@ -1,7 +1,7 @@
 const URL = 'https://ac-vill.herokuapp.com/villagers';
 
-export const getVillagers = (page) => {
-  return fetch(`${URL}?page=${page}`)
+export const getVillagers = () => {
+  return fetch(`${URL}?perPage=500`)
     .then(res => res.json());
 };
 

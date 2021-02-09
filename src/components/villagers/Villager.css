@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'AniCro';
+    src: url('../../../src/fonts/Brightly\ Crush\ Shine.otf');
+}
+
+body, html {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.villagerList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    padding-top: 25px;
+    width: 200px;
+    height: 300px;
+    border: solid 5px seagreen;
+    border-radius: 15px;
+    background-color: white;
+}
+
+figure:hover {
+    background-color: lightyellow;
+    transition-duration: 1s;
+}
+
+.name {
+    font-family: AniCro;
+    font-size: 20pt;
+    color: darkslategrey;
+}
+
+img {
+    height: 200px;
+}
+
+.details {
+    text-align: center;
+    font-family: Georgia;
+}
+
+.back {
+    text-align: left;
+    font-family: AniCro;
+    font-size: 15pt;
+    color: darkslategrey;
+}
+
+.detailsImg {
+    margin-top: 2%;
+    height: 400px;
+    margin-bottom: 2%;
+}
+
+.detailsName {
+    font-family: AniCro;
+    font-size: 30pt;
+    margin-bottom: 1%;
+    color: seagreen;
+}
+
+.quote {
+    font-style: italic;
+}

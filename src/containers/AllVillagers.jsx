@@ -8,12 +8,14 @@ export default function AllVillagers() {
   useEffect(() => {
     getVillagers().then((newVillagers) => setVillagers(newVillagers));
   }, []);
-
+ 
   return (
     <div>
       {
         villagers ?
-          <VillagerList villagers={villagers} />
+          <div>
+            <VillagerList villagers={villagers} />
+          </div>
           :
           <p>Loading...</p>
       }
